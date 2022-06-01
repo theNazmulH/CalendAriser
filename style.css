@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #eee;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    background: #34495e;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calendar{
+    padding-bottom: 10px;
+    max-width: 350px;
+    width: 100%;
+    background: #2c3e50;
+    box-shadow: 0 2px 0 #34495e;
+
+}
+.month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #8e44ad;
+    text-align: center;
+}
+
+.month h1{
+    font-size: 32px;
+    font-weight: 400;
+}
+.month i{
+    color: #fff;
+    font-size: 20px;
+}
+.day{
+    line-height: 1.5;
+}
+.weekdays{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #34495e;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nextDay,
+.prevDay{
+    color: #95a5a6;
+}
+.nextDay,
+.prevDay,
+.singleDay{
+    cursor: pointer;
+    padding: 10px 5px;
+    width: calc(100% / 7);
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    
+}
+.nextDay:hover,
+.prevDay:hover,
+.singleDay:hover{
+    border: 1px solid #95a5a6;
+}
+.today{
+    background: #27ae60;
+}
+.next,
+.prev{
+    cursor: pointer;
+}
